@@ -34,6 +34,45 @@ def problem_Three():
     print(longest(['blue', 'red', 'the old barn', 'the white house', 'green']))
 
 def problem_Four():
+    L = []
+    for i in range(1, 101):
+        L.append(i)
+    T = ()
+    for i in range(1, 101):
+        T += (i,)
+    print(L,"\n", T, "\n")
+
+    L = []
+    for i in range(1, 102, 2):
+        L.append(i)
+    T = ()
+    for i in range(1, 102, 2):
+        T += (i,)
+    print(L,"\n", T, "\n")
+
+    L = []
+    for i in range(0, 50):
+        L.append(i**2)
+    T = ()
+    for i in range(0, 50):
+        T += (i**2,)
+    print(L,"\n", T, "\n")
+
+    L = []
+    for i in range(60):
+        L.append(random.randrange(0, 50))
+    T = ()
+    for i in range(60):
+        T += (random.randrange(0, 50),)
+    print(L,"\n", T, "\n")
+
+    L = []
+    for i in range(50):
+        L.append(0)
+    T = ()
+    for i in range(50):
+        T += (0,)
+    print(L,"\n", T, "\n")
     
 
 def problem_Six():
@@ -63,21 +102,5 @@ def problem_Seven():
     print(permutation(poly))
 
 
-    
-
-    
-
-
-
-
-            
-
-                
-
-
-
-
-
-
 if __name__ == "__main__":
-    problem_Seven()
+    problem_Four()
