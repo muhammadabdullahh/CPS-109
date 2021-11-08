@@ -126,5 +126,15 @@ def problem_Five():
     l = [2,2,2,2,2,2]
     print(isPal(l))
 
+print("problem 1")
+problem_One()
+print("\n\nproblem 2")
+problem_Two()
+print("\n\nproblem 3")
+problem_Three()
+print("\n\nproblem 4")
+problem_Four()
+    
+
 
 
