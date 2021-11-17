@@ -1,4 +1,4 @@
-from TaskSix import getFrequency
+from t6 import getFrequency
 def getDecFrequency():
 
     text = open("Decreasing_Frequency.txt", "w")

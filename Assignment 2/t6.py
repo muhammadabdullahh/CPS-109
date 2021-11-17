@@ -12,11 +12,11 @@ def getFrequency():
     #This loop removes all of the questions marks and elements with nothing in them
     #and creates a new list with only valid words
     for i in range(len(temp_All_Words)):
-        temp = str(temp_All_Words[i])
+        temp =  (str(temp_All_Words[i])).lower()
         if len(temp_All_Words[i]) <= 0:
             pass
-        elif temp[-1] == '?':
-                all_Words.append(temp[:-1])
+        elif (temp[-1] == '?') or (temp[-1] == ',') or (temp[-1] == '.') or (temp[-1] == '!') or (temp[-1] == ';'):
+            all_Words.append(temp[:-1])
         else:
             all_Words.append(temp)
      
@@ -41,5 +41,3 @@ def getFrequency():
     text.close()
     freq.close()
     return(list_Of_Words, list_Of_Counts)
-            
-    
