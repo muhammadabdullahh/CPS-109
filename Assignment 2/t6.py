@@ -13,12 +13,8 @@ def getFrequency():
     #and creates a new list with only valid words
     for i in range(len(temp_All_Words)):
         temp =  (str(temp_All_Words[i])).lower()
-        if len(temp_All_Words[i]) <= 0:
-            pass
-        elif (temp[-1] == '?') or (temp[-1] == ',') or (temp[-1] == '.') or (temp[-1] == '!') or (temp[-1] == ';'):
-            all_Words.append(temp[:-1])
-        else:
-            all_Words.append(temp)
+        newTemp = ''.join(filter(str.isalnum, temp))    #this line removes all special chars froma str
+        all_Words.append(newTemp)
      
     words_Used = [] #creating an array to add words that we have already counted
     list_Of_Words = []
