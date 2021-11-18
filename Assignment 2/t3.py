@@ -1,7 +1,7 @@
 from t2 import getUnique
 def get_unique_dict():
     '''creates a dictionary of all unique questions and answers'''
-    text = open("QA Dictionary", "w")
+    text = open("QA_Dictionary.txt", "w")
     pairs = getUnique()
     this_dict = {}
     for elem in pairs:

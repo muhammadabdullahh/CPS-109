@@ -25,7 +25,7 @@ class MyTests(unittest.TestCase):
     #Storing the pairs from unique_QA_Pairs.txt as a dictionary for task three
     print("Testing Task 3...\n")
     myDict = get_unique_dict()
-    print("\tdictionary of unique pairs created and returned: \n")
+    print("\tQA_Dictionary.txt: \n")
 
     #creating a Questions.txt for all questions for part four
     print("Testing Task 4...\n")
