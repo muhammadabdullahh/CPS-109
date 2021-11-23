@@ -3,7 +3,8 @@
 def getNumOfPairs():
     '''returns the number of pairs in the text file'''
     #accessing file
-    text = open('QA_Pairs.txt', 'r')
+    text = open('Smaller_Pairs.txt', 'r')
+    #text = open('QA_Pairs.txt', 'r')
     lines = text.read()
     content_list = lines.split('\n')
 
@@ -12,7 +13,8 @@ def getNumOfPairs():
 
 def getPairs():
     '''returns all of the questions and answers in pairs'''
-    text = open('QA_Pairs.txt', 'r')
+    text = open('Smaller_Pairs.txt', 'r')
+    #text = open('QA_Pairs.txt', 'r')
     lines = text.read()
     content_list = lines.split('\n')    #splitting each line
 

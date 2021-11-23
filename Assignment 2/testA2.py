@@ -1,6 +1,5 @@
 #importing all functions from each task needed to test along
-#along with the unittest to run tests
-import unittest
+
 from t1 import getNumOfPairs
 from t2 import getOverlap
 from t2 import getUnique
@@ -10,7 +9,7 @@ from t5 import getAnswers
 from t6 import getFrequency
 from t7 import getDecFrequency
 
-class MyTests(unittest.TestCase):
+class MyTests():
     #printing number of pairs for task one
     print("Testing Task 1...\n")
     print("\tnumber of pairs: ", getNumOfPairs(), "\n")
@@ -25,7 +24,7 @@ class MyTests(unittest.TestCase):
     #Storing the pairs from unique_QA_Pairs.txt as a dictionary for task three
     print("Testing Task 3...\n")
     myDict = get_unique_dict()
-    print("\tQA_Dictionary.txt: \n")
+    print("\tQA_Dictionary.txt Created \n")
 
     #creating a Questions.txt for all questions for part four
     print("Testing Task 4...\n")
@@ -49,6 +48,6 @@ class MyTests(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main(exit=True)
+    MyTests()
     
     
